@@ -1,0 +1,19 @@
+title: BRIN High Performance Computing Workshop
+description: Workshop untuk penggunaan High Performance Computing (HPC) di BRIN
+theme: just-the-docs
+
+url: https://test.winarto.net
+
+# Use custom color scheme
+color_scheme: hpcw
+
+# Use custom footer
+footer_content: "Copyright &copy; 2023 Himawan Winarto. Disediakan di bawah lisensi <a href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.id\">CC BY-NC 4.0</a>."
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%F" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+# Enable or disable the site search
+# Supports true (default) or false
+search_enabled: false
