@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Lisensi"
-last_modified_date: 2023-07-14
+last_modified_date: 2023-07-16
 ---
 ## Materi Instruksi
 
@@ -28,7 +28,7 @@ Anda tidak perlu menaati lisensi untuk bagian materi ini yang telah berada di ba
 
 Tidak ada jaminan yang diberikan oleh lisensi ini. Lisensi ini mungkin tidak memberikan izin yang sesuai dengan tujuan penggunaan Anda. Sebagai contoh, hak-hak lainnya seperti hak atas potret, hak atas privasi, atau hak moral dapat membatasi penggunaan materi berlisensi CC.
 
-### Situs
+## Situs
 
 Situs diadaptasi dari [template][jtd-template] tema [Just the Docs] untuk [Jekyll] dan dipublikasikan menggunakan [GitHub Pages].
 
