@@ -15,3 +15,46 @@ last_edit_time_format: "%F" # uses ruby's time format: https://ruby-doc.org/stdl
 # Enable or disable the site search
 # Supports true (default) or false
 search_enabled: false
+
+# Collections
+collections:
+  persiapan:
+    output: true
+  workshop_1:
+    output: true
+  workshop_2:
+    output: true
+  workshop_3:
+    output: true
+  workshop_4:
+    output: true
+  workshop_5:
+    output: true
+  workshop_6:
+    output: true
+  workshop_7:
+    output: true
+  workshop_8:
+    output: true
+
+# Configure just_the_docs for collections
+just_the_docs:
+  collections:
+    persiapan:
+      name: Persiapan
+    workshop_1:
+      name: Workshop I
+    workshop_2:
+      name: Workshop II
+    workshop_3:
+      name: Workshop III
+    workshop_4:
+      name: Workshop IV
+    workshop_5:
+      name: Workshop V
+    workshop_6:
+      name: Workshop VI
+    workshop_7:
+      name: Workshop VII
+    workshop_8:
+      name: Workshop VIII
