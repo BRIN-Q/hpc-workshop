@@ -5,6 +5,15 @@ theme: just-the-docs
 # Use custom color scheme
 color_scheme: hpcw
 
+# Callout setting
+callouts:
+  catatan:
+    title: Catatan
+    color: yellow
+  warning:
+    title: Warning
+    color: red
+
 # Use custom footer
 footer_content: "Copyright &copy; 2023 Himawan Winarto. Disediakan di bawah lisensi <a href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.id\">CC BY-NC 4.0</a>."
 
@@ -15,6 +24,10 @@ last_edit_time_format: "%F" # uses ruby's time format: https://ruby-doc.org/stdl
 # Enable or disable the site search
 # Supports true (default) or false
 search_enabled: false
+
+# Fix HTML Compression
+compress_html:
+  blanklines: true
 
 # Collections
 collections:
@@ -33,8 +46,6 @@ collections:
   workshop_6:
     output: true
   workshop_7:
-    output: true
-  workshop_8:
     output: true
 
 # Configure just_the_docs for collections
@@ -56,5 +67,3 @@ just_the_docs:
       name: Workshop VI
     workshop_7:
       name: Workshop VII
-    workshop_8:
-      name: Workshop VIII
