@@ -10,9 +10,15 @@ callouts:
   catatan:
     title: Catatan
     color: yellow
-  warning:
-    title: Warning
+  peringatan:
+    title: Peringatan
     color: red
+  pertanyaan:
+    title: Pertanyaan
+    color: grey-lt
+  jawaban:
+    title: Jawaban
+    color: green
 
 # Use custom footer
 footer_content: "Copyright &copy; 2023 Himawan Winarto. Disediakan di bawah lisensi <a href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.id\">CC BY-NC 4.0</a>."
