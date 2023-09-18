@@ -22,6 +22,7 @@ Sistem UNIX hanya menggunakan satu karakter LF `\n` untuk menandai akhir baris.
 
 Perbedaan ini sering menyebabkan **masalah** dalam penelitian yang melibatkan banyak orang. Misalnya ketika kita menggunakan Git, **semua line** file yang disimpan dengan IDE di Windows akan diubah oleh IDE di UNIX. Hal ini akan membuat log dari Git penuh dengan perubahan *line ending* di setiap file.
 
+{: .catatan }
 Untuk menghindari masalah ini, kita dapat menggunakan *command* `git config --global core.autocrlf input`. Dengan perintah ini, Git akan secara otomatis mengubah line ending ketika kita melakukan *commit*.[^1]
 
 ### *Case sensitivity*
