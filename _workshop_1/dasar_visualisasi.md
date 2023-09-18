@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Dasar Visualisasi
-last_modified_date: 2023-09-12
+nav_order: 1
+last_modified_date: 2023-09-18
 ---
 
 # Dasar Visualisasi dengan Python dan Jupyter

@@ -2,7 +2,8 @@
 layout: default
 title: Kompilasi Kode
 has_toc: false
-last_modified_date: 2023-09-11
+nav_order: 1
+last_modified_date: 2023-09-18
 ---
 # Kompilasi Kode
 

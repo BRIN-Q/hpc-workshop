@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Visualisasi Untuk Publikasi
-last_modified_date: 2023-09-07
+nav_order: 2
+last_modified_date: 2023-09-18
 ---
 # Visualisasi untuk Publikasi
 
@@ -120,7 +121,7 @@ ax5 = fig.add_subplot(gs_sub[1:, 1:])
 
 Meskipun penambahan **colorbar** untuk figur berwarna dapat dilakukan dengan beberapa cara, sebaiknya hal ini dilakukan secara eksplisit dengan `Axes` yang sudah disiapkan terlebih dahulu.
 
-Pengaturan ukuran dan dimensi `Axes` dapat dilakukan dengan menggunakan `GridSpec` yang baru saja kita bahas di [atas](#gridspec). Contoh penambahan *colorbar* yang benar sudah dapat dilihat di [sesi sebelumnya](/workshop_1/dasar_visualisasi.html).
+Pengaturan ukuran dan dimensi `Axes` dapat dilakukan dengan menggunakan `GridSpec` yang baru saja kita bahas di [atas](#gridspec). Contoh penambahan *colorbar* yang benar sudah dapat dilihat di [sesi sebelumnya](/workshop_1/dasar_visualisasi.html#densitycontour-plot-dua-dimensi).
 
 Selain **lokasi** dan **dimensi** dari *colorbar* kita juga harus memperhatikan pemilihan **skema warna** untuk figur kita.
 

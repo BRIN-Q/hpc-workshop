@@ -3,6 +3,7 @@ layout: default
 title: Latihan 0
 has_children: true
 has_toc: true
+nav_order: 2
 last_modified_date: 2023-09-11
 ---
 # Latihan 0
