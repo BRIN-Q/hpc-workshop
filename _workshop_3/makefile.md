@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Makefile
+nav_order: 2
 last_modified_date: 2023-09-15
 ---
 # Makefile
@@ -46,7 +47,7 @@ Sebaliknya, apabila sudah ada file dengan nama `target`, hanya file di `dependen
 Ada beberapa cara definisi variabel di Makefile:
 
 | Syntax | Keterangan |
-| --- | --- |
+| :- | :- |
 | `VARIABLE = value` | Variabel memiliki nilai `value` yang akan diekspansi saat penggunaan `VARIABLE`. |
 | `VARIABLE := value` | Variabel memiliki nilai `value` yang akan diekspansi saat definisi `VARIABLE`. |
 | `VARIABLE += value` | Nilai `value` akan ditambahkan ke `VARIABLE` nilai `value` akan diekspansi sesuai dengan jenis definisi `VARIABLE`. |
@@ -77,7 +78,7 @@ Pada contoh di atas, target yang dibuat memiliki pola `%.o` yang mencakup semua 
 Ada beberapa variabel otomatis yang juga dapat digunakan untuk menyederhanakan penulisan Makefile:
 
 | Variabel | Keterangan |
-| --- | --- |
+| :- | :- |
 | `$@` | Nama dari target yang sedang dibuat. |
 | `$<` | Nama dari file pertama di `dependencies`. |
 | `$^` | Nama dari semua file di `dependencies`. |
