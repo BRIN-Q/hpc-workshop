@@ -1,16 +1,17 @@
 ---
 layout: default
 title: Coding Best Practice
+nav_order: 1
 last_modified_date: 2023-09-07
 ---
 
-# Coding Best Practice
+# *Coding Best Practice*
 
-Tidak semua peneliti memiliki dasar ilmu pemrogaman yang sama. Hal ini dapat menjadi masalah ketika kita ingin berkolaborasi dengan peneliti lain. Untuk itu ada beberapa hal yang dapat kita lakukan untuk mempermudah proses kolaborasi.
+Tidak semua peneliti memiliki **dasar ilmu pemrogaman** yang sama. Hal ini dapat menjadi masalah ketika kita ingin berkolaborasi dengan peneliti lain. Oleh karena itu, pada sesi kali ini, kita akan membahas beberapa metode yang dapat kita gunakan dalam proses *coding* untuk mencapai hasil yang optimal.
 
 ## Penggunaan IDE
 
-IDE atau *Integrated Development Environment* adalah program penulisan kode yang dapat membantu kita untuk menulis kode dengan lebih efisien. Pada workshop kali ini, kita akan membahas penggunaan [Visual Studio Code (VS Code)](https://code.visualstudio.com/) sebagai IDE utama. VS Code memiliki keunggulan sebagai IDE *open-source* yang ringan dan dapat diubah sesuai dengan kebutuhan penggunaan. VS Code juga dapat digunakan baik secara daring maupun luring di berbagai jenis sistem operasi.
+**IDE** atau ***Integrated Development Environment*** adalah program penulisan kode yang dapat meningkatkan efisiensi penulisan berkat beberapa fitur yang terintegrasi di dalamnya.
 
 Ada beberapa komponen dari IDE yang dapat kita gunakan untuk mempermudah alur kerja:
 
@@ -38,9 +39,13 @@ Ada beberapa komponen dari IDE yang dapat kita gunakan untuk mempermudah alur ke
 
     Proses *testing* kode mungkin menjadi hal yang paling asing bagi peneliti ilmiah. Tujuan dari proses *testing* adalah untuk menguji kinerja program yang ingin kita tulis agar sesuai dengan tujuan yang diharapkan. IDE dapat membantu kita untuk melakukan proses ini secara otomatis dan lebih mudah.
 
+Pada workshop kali ini, kita akan membahas penggunaan [Visual Studio Code (VS Code)](https://code.visualstudio.com/) sebagai IDE utama.
+
+**VS Code** memiliki keunggulan sebagai IDE *open-source* yang ringan dan dapat diperkaya sesuai dengan kebutuhan penggunaan. VS Code dapat digunakan di berbagai jenis sistem operasi baik secara **daring**, melalui ***SSH tunneling*** atau **kontainer**, maupun luring.
+
 ## Format Kode
 
-Dalam penulisan kode secara kolaboratif, penentuan standar format penulisan kode sangatlah penting. Beberapa bahasa pemrograman memiliki standar format yang ditentukan, misalnya [PEP8](https://www.python.org/dev/peps/pep-0008/) untuk Python. Bahasa lain seperti C++ memiliki beberapa standar format yang dapat digunakan, misalnya [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html). Untuk kasus seperti ini, sebaiknya format penulisan yang sama disetujui oleh semua anggota tim pada awal kolaborasi.
+Dalam penulisan kode secara kolaboratif, penentuan **standar format penulisan kode** sangatlah penting. Beberapa bahasa pemrograman memiliki standar format yang ditentukan, misalnya [PEP8](https://www.python.org/dev/peps/pep-0008/) untuk Python. Bahasa lain seperti C++ memiliki beberapa standar format yang dapat digunakan, misalnya [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html). Untuk kasus seperti ini, sebaiknya format penulisan yang sama disetujui oleh semua anggota tim pada awal kolaborasi.
 
 Beberapa poin yang patut diperhatikan dalam format penulisan kode adalah:
 
