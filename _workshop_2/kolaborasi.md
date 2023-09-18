@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Kolaborasi Riset
+nav_order: 2
 last_modified_date: 2023-09-07
 ---
 # Kolaborasi Riset dengan Git
@@ -23,39 +24,46 @@ Ada beberapa alur kerja yang dapat kita lakukan dengan menggunakan sistem Git. P
 
 Dalam proses kolaborasi, kita tidak dapat menghindari kenyataan bahwa pada suatu waktu histori *commit* kita akan **bercabang**.
 
-```mermaid
-gitGraph TB:
-    commit
-    commit
-    branch kolaborator
-    checkout kolaborator
-    commit
-    commit
-    commit
-    checkout main
-    commit
-    commit
-    merge kolaborator tag: "merge"
+![](../assets/images/git-merge.svg)
+
+Untuk melakukan proses **Merge**, kita dapat menggunakan perintah:
+
+```bash
+git checkout [BRANCH TUJUAN MERGE]
+git merge [BRANCH YANG AKAN DIMERGE]
 ```
 
-Untuk hal ini ada beberapa cara yang dapat kita gunakan untuk meluruskan histori file di Git. Kita akan membahas lebih lanjut proses *merging* dalam HIMA:LATIHAN 2.
+Kita akan membahas lebih lanjut proses *merging* dalam [Latihan 2](/workshop_2/latihan_2.html).
 
 ## *Pull Request*
 
-*Pull request* adalah salah satu fitur GitHub yang sangat berguna untuk kolaborasi. Fitur ini berfungsi untuk melakukan *review* secara eksplisit terhadap proses *merge* dari dua *branch* yang berbeda. Beberapa pengguna yang ditunjuk sebagai pengawas *repo* dapat melakukan pengecekan terhadap kode-kode yang akan digabungkan dengan *branch* utama. Dalam penggunaan fitur ini, biasanya *branch* utama hanya akan dapat diakses oleh beberapa orang saja. Hal ini mengurangi resiko penulisan kode yang tidak sesuai dengan standar yang ditetapkan.
+***Pull request*** adalah salah satu fitur **GitHub** yang dapat kita gunakan untuk manajemen proses *merging*. Fitur ini memungkinkan proses *review* secara eksplisit sebelum sebuah proses *merge* dilakukan antara dua *branch*.
 
-HIMA:
+Pada umumnya, hanya sebagian kecil pengguna yang memiliki **akses penulisan** langsung ke *branch* utama. Hal ini dilakukan untuk mengurangi resiko penulisan kode yang tidak sesuai dengan standar yang ditetapkan.
+
+Fitur *pull request* memungkinkan perubahan kode yang akan di*merge* untuk dilihat dan disetujui oleh pengawas *repo* sebelum diproses. Fitur ini juga memungkinkan penambahan komentar dan diskusi terhadap perubahan kode yang diajukan.
 
 ## *Feature Branch*
 
-*Feature branch* adalah metode penggunaan Git yang memanfaatkan *branch* untuk mengelola subset file berkaitan dengan suatu fitur tertentu. Misalnya dalam penelitian, satu peneliti dapat bertanggung jawab terhadap program pengolah data sedangkan peneliti lain dapat bertanggung jawab dalam program untuk analisa. Dengan menggunakan konsep ini, masing-masing peneliti membuat *branch* yang berbeda dari *branch* utama (*main* atau *master*). Seluruh perubahan yang dilakukan akan kemudian disimpan dalam *branch* masing-masing. Saat program keseluruhan ingin dijalankan, fitur yang sudah selesai dapat digabungkan dengan *branch* utama.
+![](../assets/images/feature-branch.svg)
 
-Konsep ini juga mendorong modularisasi proses penelitian dan mengurangi kebutuhan untuk *merging* yang rawan kesalahan.
+***Feature branch*** adalah metode penggunaan Git yang memanfaatkan *branch* berbeda untuk masing-masing fitur yang sedang dikembangkan.
+
+Misalnya dalam penelitian, satu peneliti dapat bertanggung jawab terhadap program pengolah data sedangkan peneliti lain dapat bertanggung jawab dalam program untuk analisa. Dengan menggunakan konsep ini, masing-masing peneliti bekerja di dalam *branch* yang **berbeda-beda** yang bercabang dari *branch* utama (*main* atau *master*). Saat program keseluruhan ingin diperbarui, fitur yang sudah selesai dapat digabungkan dengan *branch* utama melalui proses *merge*.
+
+Konsep ini mendorong **modularisasi** proses penelitian dan **mengurangi kebutuhan *merging*** yang rawan kesalahan.
 
 ## Privatisasi *Repository*
 
-Sering kali saat kita ingin bekerja dengan orang lain, kita tidak ingin agar apa yang kita kerjakan selalu terlihat oleh orang lain. GitHub sendiri memiliki konsep ***Fork*** di mana kita dapat membuat *repo* terpisah dari *repo* utama yang terhubung secara tidak langsung di platform GitHub. Akan tetapi, konsep *Fork* bukanlah konsep dari Git dan memiliki kelemahan bahwa *repo* yang dihasilkan tidak bisa bersifat privat.
+Sering kali saat kita ingin bekerja dengan orang lain, kita **tidak ingin agar apa yang kita kerjakan bersifat publik**.
 
-Untuk hal ini kita dapat menggunakan *repo* privat yang ditambahkan sebagai *remote* kedua dari local *repo* yang kita kerjakan. Dengan cara ini dan sistem [*Feature Branch*](#feature-branch), kita dapat bekerja sama tanpa harus khawatir tentang hasil kerja sementara kita terlihat oleh orang lain.
+**GitHub** sendiri memiliki konsep ***Fork*** di mana kita dapat membuat salinan *repo* terpisah. Salinan ini dapat kita kelola secara mandiri yang memungkinkan kita untuk melakukan *commit* atau modifikasi lainnya tanpa membutuhkan *permission* dari *repo* utama. Akan tetapi, hasil *forked repo* hanya bisa dilakukan untuk *repo* publik dan hasil *repo* juga harus publik.
 
-Tahapan kerja untuk hal ini dapat dilihat di HIMA:LATIHAN 2.
+{: .catatan }
+Konsep *Fork* bukanlah konsep dari Git.
+
+Untuk kepentingan privasi ini, kita akan membahas penggunaan beberapa ***remote locations*** untuk satu *repo*.
+
+Dengan cara ini dan sistem [*Feature Branch*](#feature-branch), kita dapat bekerja sama tanpa harus khawatir tentang hasil kerja sementara kita terlihat oleh orang lain.
+
+Tahapan kerja untuk hal ini dapat dilihat di [Latihan 2](/workshop_2/latihan_2.html).
