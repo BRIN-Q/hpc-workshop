@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Kompilasi Kode
-has_children: true
 has_toc: false
 last_modified_date: 2023-09-11
 ---

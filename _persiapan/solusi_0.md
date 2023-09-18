@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Solusi Latihan 0
-grand_parent: Kompilasi Kode
 parent: Latihan 0
 last_modified_date: 2023-09-11
 ---

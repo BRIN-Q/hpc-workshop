@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Latihan 0
-parent: Kompilasi Kode
 has_children: true
-has_toc: false
+has_toc: true
 last_modified_date: 2023-09-11
 ---
 # Latihan 0
