@@ -2,17 +2,18 @@
 layout: default
 title: Visualisasi Untuk Publikasi
 last_modified_date: 2023-09-07
-usemathjax: true
 ---
 # Visualisasi untuk Publikasi
 
-Bagi peneliti, ada dua jenis visualisasi yang sering digunakan, yaitu visualisasi untuk eksplorasi data dan visualisasi untuk publikasi. Untuk eksplorisasi data, figur yang dihasilkan biasanya tidak perlu terlalu rapi mengingat tujuan utamanya adalah untuk memahami data. Akan tetapi, untuk visualisasi yang akan digunakan untuk publikasi, figur yang dihasilkan haruslah rapi dan sesuai dengan standar jurnal yang dituju.
+Bagi peneliti, ada dua jenis visualisasi yang sering digunakan, yaitu visualisasi untuk **eksplorasi data** dan **publikasi**. Untuk **eksplorisasi data**, figur yang dihasilkan biasanya tidak perlu terlalu rapi mengingat tujuan utama dari proses ini adalah untuk melakukan eksplorasi data. Lain halnya dengan visualisasi untuk **publikasi**, figur yang dihasilkan harus rapi dan sesuai dengan standar jurnal yang dituju.
 
 Pada sesi kali ini, kita akan membahas beberapa hal yang perlu diperhatikan dalam pembuatan visualisasi untuk publikasi.
 
 ## Objek Figur
 
-Untuk membuat figur yang mudah dikonfigurasi, sebaiknya kita menyimpan variabel-variabel yang berisi komponen figur. Misalnya untuk membuat plot sederhana, sering kali kita melakukan:
+Untuk membuat figur yang mudah dikonfigurasi, sebaiknya kita menyimpan variabel-variabel yang berisi komponen figur.
+
+Misalnya untuk membuat plot sederhana, kita sering melakukan:
 
 ```python
 import matplotlib.pyplot as plt
@@ -24,7 +25,7 @@ y = np.sin(x)
 plt.plot(x, y)
 ```
 
-Kendala dari cara ini adalah kita tidak mudah untuk mengatur komponen dari figur. Cara yang lebih tepat adalah dengan menyimpan objek-objek plot yang dibuat secara manual. Misalnya:
+Sisi negatif dari cara ini adalah kita tidak mudah untuk mengatur komponen dari figur. Pendekatan yang lebih tepat adalah dengan **menyimpan objek-objek plot** yang dibuat secara manual. Misalnya:
 
 ```python
 fig = plt.figure()
@@ -32,7 +33,7 @@ ax = fig.add_subplot(111)
 ax.plot(x, y)
 ```
 
-Dengan pendekatan ini, masing-masing komponen figur dapat diatur dengan mudah. Misalnya, apabila kita ingin mengubah skala sumbu $x$ pada menjadi logaritmik, kita dapat menggunakan `ax.set_xscale('log')`.
+Dengan cara ini, masing-masing komponen figur dapat direferensi dan diatur dengan mudah. Misalnya, apabila kita ingin mengubah skala sumbu $x$ pada menjadi logaritmik, kita dapat menggunakan `ax.set_xscale('log')`.
 
 Figure dan Axes yang sedang aktif juga dapat diperoleh dengan menggunakan `fig = plt.gcf()` dan `ax = plt.gca()`.
 

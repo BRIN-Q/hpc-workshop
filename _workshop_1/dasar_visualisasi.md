@@ -26,7 +26,8 @@ Matplotlib juga dapat digunakan secara bersamaan dengan LaTeX untuk penulisan te
 ### Anatomi Figur Matplotlib
 
 ![Anatomi figur Matplotlib](../assets/images/matplotlib_anatomy.png)
-*Diambil dari [](https://matplotlib.org/stable/_images/anatomy.png)*
+
+*Diambil dari [Matplotlib](https://matplotlib.org/stable/_images/anatomy.png).*
 
 Anatomi dari figur Matplotlib dapat dibagi menjadi tiga objek utama:
 
