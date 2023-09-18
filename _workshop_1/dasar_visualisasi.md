@@ -74,71 +74,71 @@ ax.set_ylabel('y')
 
 Beberapa jenis figur yang umum digunakan adalah:
 
-1. ***Line Plot***
+#### *Line Plot*
 
-    ```python
-    ax.plot(x, y, 'r--', lw=2.)
-    ```
+```python
+ax.plot(x, y, 'r--', lw=2.)
+```
 
-    ![Line Plot](../assets/images/line_plot.png)
+![Line Plot](../assets/images/line_plot.png)
 
-2. ***Scatter Plot***
+#### *Scatter Plot*
 
-    ```python
-    ax.scatter(x, y+2., c='b', marker='x', s=20., label='Menggunakan scatter')
-    ax.plot(x+0.5, y+2., 'g+', ms=5., label='Menggunakan plot')
-    ax.legend()
-    ax.set_yscale('log')
-    ```
+```python
+ax.scatter(x, y+2., c='b', marker='x', s=20., label='Menggunakan scatter')
+ax.plot(x+0.5, y+2., 'g+', ms=5., label='Menggunakan plot')
+ax.legend()
+ax.set_yscale('log')
+```
 
-    ![Scatter Plot](../assets/images/scatter_plot.png)
+![Scatter Plot](../assets/images/scatter_plot.png)
 
-3. ***Density/Contour Plot*** Dua Dimensi
+#### *Density/Contour Plot* Dua Dimensi
 
-    ```python
-    fig, (ax, axcbar) = plt.subplots(
-        ncols=2,
-        gridspec_kw={'width_ratios': [1, 0.05],
-                    'wspace': 0.1}
-    )
+```python
+fig, (ax, axcbar) = plt.subplots(
+    ncols=2,
+    gridspec_kw={'width_ratios': [1, 0.05],
+                'wspace': 0.1}
+)
 
-    X, Y = np.meshgrid(x, x)
-    Z = np.exp(-(X**2 + Y**2)/np.pi**2)
+X, Y = np.meshgrid(x, x)
+Z = np.exp(-(X**2 + Y**2)/np.pi**2)
 
-    # Buat density plot
-    cntf_plot = ax.pcolormesh(X, Y, Z, vmin=0., vmax=1., cmap='plasma')
-    cbar = fig.colorbar(cntf_plot, cax=axcbar)
+# Buat density plot
+cntf_plot = ax.pcolormesh(X, Y, Z, vmin=0., vmax=1., cmap='plasma')
+cbar = fig.colorbar(cntf_plot, cax=axcbar)
 
-    # Tambahkan garis kontur
-    cont_plot = ax.contour(X, Y, Z, colors='k', linewidths=0.5)
+# Tambahkan garis kontur
+cont_plot = ax.contour(X, Y, Z, colors='k', linewidths=0.5)
 
-    # Tambahkan label kontur
-    ax.clabel(cont_plot, inline=True, fontsize=8)
+# Tambahkan label kontur
+ax.clabel(cont_plot, inline=True, fontsize=8)
 
-    # Atur label
-    ax.set_title('Figur Kontur')
-    ax.set_xlabel('x')
-    ax.set_ylabel('y')
-    cbar.set_label('z')
-    ```
+# Atur label
+ax.set_title('Figur Kontur')
+ax.set_xlabel('x')
+ax.set_ylabel('y')
+cbar.set_label('z')
+```
 
-    ![Density/Contour Plot](../assets/images/contour_plot.png)
+![Density/Contour Plot](../assets/images/contour_plot.png)
 
-4. ***Histogram***
+#### *Histogram*
 
-    ```python
-    fig, ax = plt.subplots()
+```python
+fig, ax = plt.subplots()
 
-    rng = np.random.default_rng(0)
-    data = rng.logistic(13., 1., 10000)
+rng = np.random.default_rng(0)
+data = rng.logistic(13., 1., 10000)
 
-    counts, bins, _ = ax.hist(data, 100, density=True)
+counts, bins, _ = ax.hist(data, 100, density=True)
 
-    ax.set_xlabel('x')
-    ax.set_ylabel('PDF')
-    ```
+ax.set_xlabel('x')
+ax.set_ylabel('PDF')
+```
 
-    ![Histogram](../assets/images/histogram_plot.png)
+![Histogram](../assets/images/histogram_plot.png)
 
 ## Animasi dengan Matplotlib dan FFmpeg
 
