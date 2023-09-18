@@ -7,15 +7,38 @@ last_modified_date: 2023-09-07
 
 ## *Version Control* dalam Kolaborasi
 
-Penggunaan *version control* menjadi penting dalam kolaborasi riset. Selama ini kita mungkin sudah melakukan hal tersebut tanpa disadari. Maraknya penggunaan *online editor* seperti Google Docs atau Overleaf secara tidak langsung menunjukkan manfaat utama dari *version control* dalam kolaborasi.
+Dalam proses riset yang melibatkan **banyak orang**, sering kali kita mengalami kesulitan dalam **mengelola file** yang kita kerjakan. Oleh karena itu, penggunaan *version control* secara natural memiliki peran penting dalam proses kolaborasi.
 
-Git berbeda dari *online editor* melakukan *version control* secara bertahap dan dalam tingkat file. Hal ini berarti bahwa dua orang tidak dapat mengedit satu file yang sama secara bersamaan. Akan tetapi, dua orang masih dapat mengedit file secara terpisah dan melakukan proses ***Merge***. Ini adalah buntut dari sistem Git yang terdistribusi, di masing-masing lokasi lokal dapat memiliki file yang berbeda.
+Selama ini kita mungkin sudah melakukan *version control* secara tidak langsung dengan penamaan file atau penyimpanan di surel. Dalam ***online editor***, seperti Google Docs atau Overleaf, proses *version control* juga sudah terintegrasi secara langsung dalam bentuk **Version History** yang sering kita gunakan.
 
-Pada sesi kali ini, kita akan membahas salah satu alur penggunaan Git dengan basis *feature branch*. Ada beberapa metode lain yang mungkin bisa kalian gunakan sesuai dengan kebutuhan yang memiliki keuntungan dan kekurangan masing-masing.
+Berbeda dari *online editor* yang memungkinkan kolaborasi ***real time***, **Git** sebagai *version control* hanya bisa melakukan proses pembaharuan secara bertahap dalam tingkat file secara bertahap.
+
+Meskipun kita tidak dapat mengubah file secara bersamaan dengan kolaborator kita, dua peneliti masih dapat mengedit file secara terpisah dan melakukan proses ***Merge*** untuk menggabungkan hasil kerja mereka. Ini adalah buntut dari sifat Git yang **terdistribusi**, di mana masing-masing kolaborator memiliki salinan *repo* secara mandiri.
+
+Dengan menggunakan pendekatan ini, kita dapat menghindari masalah **perubahan file lain oleh kolaborator** yang dapat mempengaruhi hal yang sedang kita kerjakan.
+
+Ada beberapa alur kerja yang dapat kita lakukan dengan menggunakan sistem Git. Pada sesi kali ini, kita akan fokus dalam alur penggunaan Git dengan basis ***feature branch***.
 
 ## *Merging Branch*
 
-Dalam proses kolaborasi, kita tidak dapat menghindari kenyataan bahwa pada suatu waktu histori *commit* kita akan bercabang. Untuk hal ini ada beberapa cara yang dapat kita gunakan untuk meluruskan histori file di Git. Kita akan membahas lebih lanjut proses *merging* dalam HIMA:LATIHAN 2.
+Dalam proses kolaborasi, kita tidak dapat menghindari kenyataan bahwa pada suatu waktu histori *commit* kita akan **bercabang**.
+
+```mermaid
+gitGraph TB:
+    commit
+    commit
+    branch kolaborator
+    checkout kolaborator
+    commit
+    commit
+    commit
+    checkout main
+    commit
+    commit
+    merge kolaborator tag: "merge"
+```
+
+Untuk hal ini ada beberapa cara yang dapat kita gunakan untuk meluruskan histori file di Git. Kita akan membahas lebih lanjut proses *merging* dalam HIMA:LATIHAN 2.
 
 ## *Pull Request*
 
