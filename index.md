@@ -4,6 +4,7 @@ layout: home
 nav_order: 1
 last_modified_date: 2023-07-30
 ---
+# BRIN High Performance Computing Workshop 2023
 
 Selamat datang di situs penunjang workshop!
 
@@ -35,6 +36,6 @@ Workshop akan diadakan pada tanggal **19 dan 20 September 2023**.
 
 ## Pendukung Acara
 
-Acara ini dapat terlaksana berkat dukungan dari Pusat Riset Fisika Kuantum BRIN.
+Acara ini dapat terlaksana berkat dukungan dari [**Pusat Riset Fisika Kuantum BRIN**](https://quantumresearch.id/).
 
-Pembicara berterima kasih kepada American-Indonesian Cultural & Educational Foundation atas dukungan dana perjalanan yang diberikan untuk menyelenggarakan acara ini.
+Pembicara berterima kasih kepada [**American-Indonesian Cultural & Educational Foundation**](http://www.aicef.org/) atas dukungan dana perjalanan yang diberikan untuk menyelenggarakan acara ini.
