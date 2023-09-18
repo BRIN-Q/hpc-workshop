@@ -14,8 +14,6 @@ last_modified_date: 2023-09-18
 > Daftar akun GitHub dan sampaikan username Anda kepada instruktur.
 
 {: .pertanyaan }
-
-{: .pertanyaan }
 > Lakukan latihan di [Learn GIT Branching](https://learngitbranching.js.org/) mulai dari bagian **Introduction Sequence** hingga **latihan 3 (*Relative Refs #2 (~)*)** di bagian **Ramping Up**.
 
 ## Penggunaan Git

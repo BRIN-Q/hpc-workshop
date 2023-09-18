@@ -120,7 +120,7 @@ ax.clabel(cont_plot, inline=True, fontsize=8)
 ax.set_title('Figur Kontur')
 ax.set_xlabel('x')
 ax.set_ylabel('y')
-cbar.set_label('z')
+cbar.set_ylabel('z')
 ```
 
 ![Density/Contour Plot](../assets/images/contour_plot.png)
