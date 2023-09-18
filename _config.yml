@@ -18,7 +18,7 @@ callouts:
     color: grey-lt
   jawaban:
     title: Jawaban
-    color: green
+    color: purple
 
 # Use custom footer
 footer_content: "Copyright &copy; 2023 Himawan Winarto. Disediakan di bawah lisensi <a href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.id\">CC BY-NC 4.0</a>."
@@ -73,3 +73,8 @@ just_the_docs:
       name: Workshop VI
     workshop_7:
       name: Workshop VII
+
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.3"

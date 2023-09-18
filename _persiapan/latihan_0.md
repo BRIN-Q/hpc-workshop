@@ -10,7 +10,7 @@ last_modified_date: 2023-09-11
 
 Pada latihan kali ini kita akan mempelajari proses kompilasi sederhana untuk program yang menghitung nilai `arcsin(x)` secara cepat. Dengan menggunakan pendekatan polinomial Lagrange, nilai fungsi `arcsin(x)` dapat disederhanakan menjadi polinomial orde 4.
 
-File latihan dapat dilihat di folder `kode/latihan/latihan_0` atau melalui [tautan ini](../kode/latihan/latihan_0/).
+ latihan dapat dilihat di folder `kode/latihan/latihan_0` atau melalui [tautan ini](https://github.com/BRIN-Q/hpc-workshop/tree/main/kode/latihan/latihan_0).
 
 ## *Preprocessor*
 

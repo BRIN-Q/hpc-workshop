@@ -38,7 +38,7 @@ last_modified_date: 2023-09-11
 > Apa isi dari file `*.s` yang dihasilkan?
 >
 > {: .jawaban }
-> > File `*.s` akan berisi instruksi dalam bahasa *assembly* yang secara umum berbentuk `[command] [register 1] ([register 2])`.
+> > `*.s` akan berisi instruksi dalam bahasa *assembly* yang secara umum berbentuk `[command] [register 1] ([register 2])`.
 
 ## *Assembler*
 
