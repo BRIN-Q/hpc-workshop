@@ -19,10 +19,10 @@ Workshop akan diadakan pada tanggal **19 dan 20 September 2023**.
 | 08.00 - 08.30 | Registrasi dan pembukaan |
 | 08.30 - 10.00 | **Workshop I**: Visualisasi data dengan Python |
 | 10.00 - 10.30 | Break |
-| 10.30 - 12.00 | **Workshop II**: Just-in-time (JIT) compiler dan paralelisasi Python |
+| 10.30 - 12.00 | **Workshop II**: Version control dengan Git untuk kolaborasi riset |
 | 12.00 - 13.00 | Ishoma |
-| 13.00 - 14.30 | **Workshop III**: Version control dengan Git untuk kolaborasi riset |
-| 14.30 - 15.30 | **Workshop IV**: Testing, debugging, dan coding best practice |
+| 13.00 - 14.30 | **Workshop III**: Testing, debugging, dan coding best practice |
+| 14.30 - 15.30 | **Workshop IV**: Just-in-time (JIT) compiler dan paralelisasi Python |
 
 ## Hari Kedua (20 September 2023)
 
