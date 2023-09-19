@@ -28,7 +28,7 @@ Workshop akan diadakan pada tanggal **19 dan 20 September 2023**.
 
 | Jam | Acara |
 | :- | :- |
-| 08.30 - 10.00 | **Workshop V**: Pengenalan HPC, UNIX shell, dan Slurm |
+| 08.30 - 10.00 | **Workshop V**: Pengenalan HPC dan UNIX shell |
 | 10.00 - 10.30 | Break |
 | 10.30 - 12.00 | **Workshop VI**: OpenMP dan Vektorisasi |
 | 12.00 - 13.00 | Ishoma |

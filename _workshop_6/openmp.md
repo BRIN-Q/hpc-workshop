@@ -8,7 +8,11 @@ last_modified_date: 2023-09-15
 
 [**OpenMP**](https://www.openmp.org/) adalah serangkaian *Application Programming Interface* (API) yang dapat digunakan untuk melakukan paralelisasi untuk C, C++, dan Fortran. Penggunaan OpenMP akan sedikit lebih mudah dibanding [OpenMPI]HIMA dikarenakan sistem paradigma memori bersama (*shared memory*) yang digunakan oleh OpenMP. Hal ini berarti bahwa manajemen akses memori dilakukan secara abstrak oleh OpenMP tanpa perlu adanya komunikasi eksplisit seperti OpenMPI. Hal ini juga menjadi kelemahan dari OpenMP karena abstraksi akses memori hanya dapat diterapkan pada satu unit komputer (*node*) saja.
 
-OpenMP sendiri menggunakan sistem ***multi-threading*** untuk melakukan paralelisasi. Sejak pertengahan tahun 1990-an, banyak perusahaan sudah menerapkan sistem *multi-threading* yang berbeda pada prosesor mereka. Standar OpenMP 1.0 untuk Fortran diadopsi sejak tahun 1997. Sejak saat itu, OpenMP terus berkembang dan menambahkan beberapa fitur baru seperti ***Single Instruction Multiple Data*** (SIMD) yang akan kita pelajari pada sesi Vektorisasi HIMA dan direktif untuk GPU.
+OpenMP sendiri menggunakan sistem ***multi-threading*** untuk melakukan paralelisasi. Sejak pertengahan tahun 1990-an, banyak perusahaan sudah menerapkan sistem *multi-threading* yang berbeda pada prosesor mereka. Standar OpenMP 1.0 untuk Fortran diadopsi sejak tahun 1997. Sejak saat itu, OpenMP terus berkembang dan menambahkan beberapa fitur baru seperti ***Single Instruction Multiple Data*** (SIMD) yang akan kita pelajari pada sesi Vektorisasi dan direktif untuk GPU.
+
+![Performa Komputer](/assets/images/50-years-processor-trend.png)
+
+*Diambil dari [Microprocessor Trend Data](https://github.com/karlrupp/microprocessor-trend-data).*
 
 ## Konsep dalam OpenMP
 
