@@ -31,7 +31,7 @@ last_modified_date: 2023-09-18
 >
 > Tambahkan juga file `contoh.txt` dengan isi bebas.
 >
-> Lakukan proses inisialisasi repo Git dan tambahkan *repo* yang kalian buat di GitHub sebagai *remote* dengan nama `origin`.
+> Lakukan proses inisialisasi *repo* Git dan tambahkan *repo* yang kalian buat di GitHub sebagai *remote* dengan nama `origin`.
 >
 > Publikasikan *repo* lokal kalian ke *remote* `origin`.
 

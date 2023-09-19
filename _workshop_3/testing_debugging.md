@@ -52,7 +52,7 @@ Penggunaan GDB memungkinkan kita untuk menjalankan program secara bertahap dan m
 
 ### Valgrind
 
-[**Vaglgrind**](https://valgrind.org/) adalah program yang dapat digunakan melakukan diagnosa memori pada program. Sama seperti GDB, program harus dikompilasi dengan *flag* `-g`.
+[**Valgrind**](https://valgrind.org/) adalah program yang dapat digunakan melakukan diagnosa memori pada program. Sama seperti GDB, program harus dikompilasi dengan *flag* `-g`.
 
 Kegunaan utama Valgrind adalah untuk memeriksa **penggunaan memori** untuk C, C++, dan Fortran. Contoh kasus yang mudah dideteksi oleh Valgrind adalah akses variabel di luar batas array (*out of bound*), kebocoran memori (*memory leak*), dan penggunaan variabel yang belum diinisialisasi.
 
