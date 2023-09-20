@@ -14,7 +14,14 @@ Kelemahan dari OpenMP adalah kita harus mendesain **komunikasi antar proses** se
 
 ## Dasar OpenMPI
 
-Untuk memulai penggunaan OpenMPI, kita dapat memanggil program yang terkompilasi dengan:
+Untuk memulai penggunaan OpenMPI, kita dapat melakukan kompilasi dengan wrapper `mpicc` atau `mpifort`:
+
+```bash
+mpicc program.c -o program
+mpiifort program.f90 -o program
+```
+
+memanggil program yang terkompilasi dengan:
 
 ```bash
 mpirun -np N ./program
