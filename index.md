@@ -32,8 +32,8 @@ Workshop akan diadakan pada tanggal **19 dan 20 September 2023**.
 | 10.00 - 10.30 | Break |
 | 10.30 - 11.30 | **Workshop VI**: OpenMP dan Vektorisasi |
 | 11.30 - 12.30 | Ishoma |
-| 12.30 - 13.30 | ***Guest Speaker***: **Billy Mambrasar**, Staf Khusus Presiden RI |
-| 13.30 - 15.30 | **Workshop VII**: OpenMPI |
+| 12.30 - 14.00 | ***Guest Speaker***: **Billy Mambrasar**, Staf Khusus Presiden RI |
+| 14.00 - 15.30 | **Workshop VII**: OpenMPI |
 
 ## Pendukung Acara
 
